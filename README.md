@@ -8,7 +8,8 @@ Its a simple board game and a part of my assignment.
 **Habibi (حبيبي)Time pass** is an abstract strategy board game. It is traditionally a two player game played with Habibi Digits (2 and 3) on a Habibi board. It can be played using the 20×20 Habibi board or the 10×10 Habibi board. 
 The main objective of “Habibi (حبيبي)Time” pass is you must try to create a row of 5 or more digits in any direction to win. It is a straightforward yet fun game.
 
-
+<img src="images/Habibi.png" width ="150">   
+                                                                                                 
 ## Requirements
 
 * Python 3 (any version will do)
