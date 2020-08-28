@@ -1,4 +1,5 @@
 # Board_game-CS3001-
+
 Its a simple board game and a part of my assignment.
 
 
@@ -16,7 +17,7 @@ The main objective of “Habibi (حبيبي)Time” pass is you must try to crea
 
 ## Installing
 
-Simply open "Gomoku.py" in the "Gomoku" folder through Python and run.
+Simply open "Habibi.py" in the "Habibi" folder through Python and run.
 
 
 ## Instructions
@@ -29,4 +30,26 @@ Simply open "Gomoku.py" in the "Gomoku" folder through Python and run.
 
 4. So both the players should try to place their number in such a manner that their opponent aren’t able to make 5 digits in a row,column or diagonally.
 
+
 # Screenshots
+
+Blank Board             |  Game In-process        |  Game Ended 
+:----------------------:|:----------------------: |:----------------------:
+![](images/t1.png)  |  ![](images/t2.png)         |  ![](images/t3.png)
+
+
+# Built With
+
+* **Python 3**
+
+
+# Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+*Please make sure to update tests as appropriate.*
+
+
+# Author 
+
+**Sheikh Muhammed Tadeeb**
