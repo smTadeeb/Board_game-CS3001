@@ -40,7 +40,7 @@ Blank Board             |  Game In-process        |  Game Ended
 
 # Built With
 
-* **Python 3**
+* Python 3
 
 
 # Contributing
