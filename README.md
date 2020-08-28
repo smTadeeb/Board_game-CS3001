@@ -31,7 +31,7 @@ Simply open "Habibi.py" in the "Habibi" folder through Python and run.
 4. So both the players should try to place their number in such a manner that their opponent aren’t able to make 5 digits in a row,column or diagonally.
 
 
-# Screenshots
+## Screenshots
 
 Blank Board             |  Game In-process        |  Game Ended 
 :----------------------:|:----------------------: |:----------------------:
