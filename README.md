@@ -10,12 +10,17 @@ The main objective of “Habibi (حبيبي)Time” pass is you must try to crea
 
 <img src="images/Habibi.png" width ="150">   
                                                                                                  
-## Requirements
+## Python Version
 
 * Python 3 (any version will do)
-* Tkinter
 
 
+## Technical Requirements
+
+Modules             |  Methods        |  Functions |  Attributes 
+:---------------:|:---------------: |:---------------: |:---------------:
+tkinter , sys, time | pack(), grid(), place(), title(), mainloop() | geometry(), minsize(), maxsize() | Labels(text, bd, fg, font, padx, pady, relief), Pack(anchor, side, fill, padx, pady)
+                                                                                                            
 ## Installing
 
 Simply open "Habibi.py" in the "Habibi" folder through Python and run.
