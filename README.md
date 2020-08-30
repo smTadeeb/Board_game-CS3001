@@ -1,6 +1,6 @@
 # Board_game-CS3001-
 
-Its a simple board game and a part of my assignment.
+This is my project on the creation of a digital board game, and it is part of my university assignment..
 
 
 ## Habibi (حبيبي)Time pass
