@@ -11,10 +11,10 @@ label_info.pack(side =TOP , anchor = "n" ,fill= X)
 
 myInterface.title("Tadeeb's GUI")
 
-f1 = Frame(myInterface,borderwidth = 8 ,bg= "gold", relief = SUNKEN)
+f1 = Frame(myInterface,borderwidth = 5 ,bg= "goldenrod", relief = GROOVE)
 f1.pack(side = BOTTOM, anchor = "s" , fill = X)
 
-f2 = Frame(myInterface,borderwidth = 5 ,bg= "grey38", relief = GROOVE)
+f2 = Frame(myInterface,borderwidth = 8 ,bg= "goldenrod", relief = GROOVE)
 f2.pack(side = LEFT, anchor = "e" , fill = Y)
 L1 = Label(f2 , text = "grid size")
 L1.pack()
@@ -23,6 +23,10 @@ b1 = Button(f1,fg="red",text="Exit")
 b1.pack(side = BOTTOM ,anchor ="se")
 
 b2 = Button(f1,fg="Green",text="Restart")
-b2.pack(side = BOTTOM,anchor = "se" )
+b2.pack(side = RIGHT,anchor = "se" )
+
+b3 = Button(f1,fg="Blue",text="How to Play",padx = "5",pady = "5")
+b3.pack(side = LEFT ,anchor = "sw" )
+
 
 myInterface.mainloop()
