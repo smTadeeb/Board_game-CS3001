@@ -14,12 +14,10 @@ myInterface.title("Tadeeb's GUI")
 f1 = Frame(myInterface,borderwidth = 8 ,bg= "gold", relief = SUNKEN)
 f1.pack(side = BOTTOM, anchor = "s" , fill = X)
 
-#Photo = PhotoImage(file="Habibi.png") 
-#Photo_label = Label(image= Photo)
-#Photo_label.pack()
-
-#s = Canvas(myInterface, width=600, height=600, background= "gold")          
-#s.pack(fill = X)
+f2 = Frame(myInterface,borderwidth = 5 ,bg= "grey38", relief = GROOVE)
+f2.pack(side = LEFT, anchor = "e" , fill = Y)
+L1 = Label(f2 , text = "grid size")
+L1.pack()
 
 b1 = Button(f1,fg="red",text="Exit")
 b1.pack(side = BOTTOM ,anchor ="se")
