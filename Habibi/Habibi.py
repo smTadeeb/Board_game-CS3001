@@ -1,6 +1,4 @@
 from tkinter import *
-from time import *
-import sys
 
 myInterface = Tk()
 myInterface.minsize(600,600)
@@ -19,7 +17,9 @@ f2.pack(side = LEFT, anchor = "e" , fill = Y)
 L1 = Label(f2 , text = "grid size")
 L1.pack()
 
-b1 = Button(f1,fg="red",text="Exit")
+def close_window():
+    myInterface.destroy()
+b1 = Button(f1,fg="red",text="Exit",command = close_window)
 b1.pack(side = BOTTOM ,anchor ="se")
 
 b2 = Button(f1,fg="Green",text="Restart")
