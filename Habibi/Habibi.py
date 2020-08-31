@@ -28,6 +28,13 @@ can_widget.create_line(600,5,600,600,fill = "black",width = 4)
            
 def close_window():
     myInterface.destroy()
+ 
+def game_rules():
+    messagebox.showinfo("Game Rules" , "1. It is traditionally played with Habibi Digits (2 and 3) on a 20×20 or 10×10 Habibi board.\n\
+                        \n2. Players alternatively place a digit assigned to them (either 2 or 3) on an cell.\n\
+                        \n3. The winner is the first player to form an unbroken chain of five digits horizontally, vertically, or diagonally to get a sum of (10 or 15) depending upon his chosen number.\n\
+                        \n4. So both the players should try to place their number in such a manner that their opponent aren’t able to make 5 digits in a row,column or diagonally.")
+     
            
 b1 = Button(f1,fg="red",text="Exit",command = close_window)
 b1.pack(side = BOTTOM ,anchor ="se")
@@ -35,7 +42,7 @@ b1.pack(side = BOTTOM ,anchor ="se")
 b2 = Button(f1,fg="Green",text="Restart")
 b2.pack(side = RIGHT,anchor = "se" )
 
-b3 = Button(f1,fg="Blue",text="How to Play",padx = "5",pady = "5")
+b3 = Button(f1,fg="Blue",text="How to Play",padx = "5",pady = "5",command = game_rules)
 b3.pack(side = LEFT ,anchor = "sw" )
 
 def checkered(canvas, line_distance):
