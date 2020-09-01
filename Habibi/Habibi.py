@@ -54,7 +54,15 @@ def game_rules():
                         \n2. Players alternatively place a digit assigned to them (either 2 or 3) on an cell.\n\
                         \n3. The winner is the first player to form an unbroken chain of five digits horizontally, vertically, or diagonally to get a sum of (10 or 15) depending upon his chosen number.\n\
                         \n4. So both the players should try to place their number in such a manner that their opponent aren’t able to make 5 digits in a row,column or diagonally.")
-  
+                                                                              
+def restart_program():
+    """Restarts the current program.
+    Note: this function does not return. Any cleanup action (like
+    saving data) must be done before calling this function."""
+    python = sys.executable
+    os.execl(python, python, * sys.argv)
+    return restart_program()
+    
 def checkered(canvas, line_distance):  
     """
     Used to make the 10*10 grid on canvas
@@ -69,11 +77,11 @@ def checkered(canvas, line_distance):
 
     
     
-b1 = Button(f1,fg="red",text="Exit",padx = "8",pady = "8",command = close_window)        #################################################################
-b1.pack(side = TOP ,anchor ="s")                                                         ##                                                             ##
-                                                                                         ## Buttons on canvas to exit,restart and to check game rules.  ##                 
-b2 = Button(f1,fg="Green",text="Restart",padx = "8",pady = "8")                          ##                                                             ##
-b2.pack(side = RIGHT ,anchor = "se" )                                                    #################################################################
+b1 = Button(f1,fg="red",text="Exit",padx = "8",pady = "8",command = close_window)            #################################################################
+b1.pack(side = TOP ,anchor ="s")                                                             ##                                                             ##
+                                                                                             ## Buttons on canvas to exit,restart and to check game rules.  ##                 
+b2 = Button(f1,fg="Green",text="Restart",padx = "8",pady = "8",,command = restart_program)   ##                                                             ##
+b2.pack(side = RIGHT ,anchor = "se" )                                                        #################################################################
 
 b3 = Button(f1,fg="Blue",text="How to Play",padx = "5",pady = "5",command = game_rules)
 b3.pack(side = LEFT ,anchor = "sw" )
