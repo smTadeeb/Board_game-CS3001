@@ -17,9 +17,9 @@ The main objective of “Habibi (حبيبي)Time” pass is you must try to crea
 
 ## Technical Requirements
 
-Modules             |  Methods        |  Functions |  Attributes 
+Modules             |  Methods        | Functions |  Attributes 
 :---------------:|:---------------: |:---------------: |:---------------:
-tkinter , sys, time | pack(), grid(), place(), title(), mainloop() | geometry(), minsize(), maxsize() | Labels(text, bd, fg, font, padx, pady, relief), Pack(anchor, side, fill, padx, pady)
+tkinter , sys, time | pack(), grid(), place(), title(), mainloop() , bind() , minsize(), maxsize()  |  close_window() , game_rules , checkered() , restart_program() , Value_Check_int() , MouseClick() , Piece_Location , Location_Validation  | Labels(text, bd, fg, font, padx, pady, relief), Pack(anchor, side, fill, padx, pady)
                                                                                                             
 ## Installing
 
