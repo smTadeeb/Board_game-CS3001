@@ -75,12 +75,12 @@ width = 500
 height = 500
 
 def create_circle(x, y, radius, fill = "", outline = "black", width = 1):
-    can_widget.create_oval(x - radius, y - radius, x + radius, y + radius, fill = fill, outline = outline, width = width)
+    can_widget.create_oval(x - radius, y - radius, x + radius, y + radius, fill = fill, outline = outline, width = width)       # Use for creating circles 
 
 def Value_Check_int(Value):
     try:
         Value = int(Value)
-    except ValueError:
+    except ValueError:                   # Used to add functionalities to the program by click of mouse
         return "string"
     else:
         return "int"
@@ -96,8 +96,8 @@ can_widget.bind("<Button-1>", MouseClick)
 
 Click_Cord = [None, None]
 
-def Piece_Location(X_click, Y_click):    
-    X = None
+def Piece_Location(X_click, Y_click):               # Checks for the location/co-ordinate where the click has been made
+    X = None                                          
     Y = None
     for i in range(len(Actual_CordX1)):
         
@@ -109,7 +109,7 @@ def Piece_Location(X_click, Y_click):
 
     return X, Y
 
-def Location_Validation():
+def Location_Validation():                                                     # Validates whether a block exist on a perticular place or not
 
     if X == None or Y == None:
         return False
